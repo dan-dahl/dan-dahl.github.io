@@ -1,0 +1,30 @@
+button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7; color: black; /* Green */
+    border-radius: 12px;
+    padding: 14px 40px;
+}
+
+button:hover {
+    background-color: #e7e7e7; color:black; /* Green */
+    color: white;
+}
+ 
+button1 {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: white;
+    color: red;
+    border: 2px solid red;  /* Green */
+    border-radius: 12px;
+    padding: 14px 50px
+   }
+
+button1:hover {
+    background-color: red; /* Green */
+    color: white;
+}
+ 

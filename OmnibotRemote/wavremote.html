@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content=" initial-scale=1, maximum-scale=1, user-scalable=no">
+ <link rel="stylesheet" href="style.css" />
+<script>
+var back = new Audio();
+var forward = new Audio();
+var right = new Audio();
+var left = new Audio();
+var beep = new Audio();
+var beep2 = new Audio();
+beep.src = "wav2.wav";
+beep2.src = "wav5.wav";
+left.src = "wav6.wav";
+right.src = "wav4.wav";
+forward.src = "wav1.wav";
+back.src = "wav3.wav";
+function ForwardSound(){
+  back.pause();
+  right.pause();
+  left.pause();
+  forward.play();
+}
+function BackSound() {
+  forward.pause();
+  right.pause();
+  left.pause();
+  back.play();
+}
+function RightSound(){
+  forward.pause();
+  back.pause();
+  left.pause();
+  right.play();
+}
+function LeftSound(){
+  forward.pause();
+  back.pause();
+  right.pause();
+  left.play();
+}
+function StopSound() {
+    forward.pause();
+    back.pause();
+    right.pause();
+    left.pause();
+}  
+function BeepSound() {
+    forward.pause();
+    back.pause();
+    right.pause();
+    left.pause();
+    beep.play();
+}  
+function Beep2Sound() {
+    forward.pause();
+    back.pause();
+    right.pause();
+    left.pause();
+    beep2.play();
+}  
+  
+</script>
+</head>
+<body>
+
+  
+</div>
+<div style=" height:400px; width:300px; float:center;">
+<center>
+<h1><span style="color:#FFA500;">Omnibot</span><span style="color:#5C5C5C"> 5402</span></h1>
+<h2>Robot Remote</h2>
+<audio id="back"> </audio>
+<button onclick="ForwardSound()"> Forward </button><br><br>
+<button onclick="LeftSound()"> Left&nbsp; </button>&nbsp;&nbsp;&nbsp;
+<button onclick="RightSound()"> Right </button><br><br>
+<button onclick="BackSound()"> Reverse </button><br><br><br>
+<button1 onclick="StopSound()"> Stop </button1>
+<br><br><br><br>
+
+
+<left><button onclick="BeepSound()"> Beep </button></left>&nbsp;&nbsp;&nbsp;
+<left><button onclick="Beep2Sound()"> Beep </button></left>&nbsp;&nbsp;
+<left><button onclick="BeepSound()"> Beep </button></left>
+</div>
+
+  
+</body>
+</html>
